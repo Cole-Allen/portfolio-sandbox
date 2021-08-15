@@ -5,10 +5,14 @@
 html {
   font-family: "Ubuntu", sans-serif;
   scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
 }
 
 body {
   margin: 0px;
+  background-image: url(photos/Graveyard_OverlaybackgroundMore_night.png);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 h4 {
@@ -16,8 +20,6 @@ h4 {
 }
 
 h1 {
-  padding-top: 50px;
-  padding-bottom: 50px;
   margin: 0;
 }
 
@@ -32,8 +34,8 @@ button {
   font-size: 24pt;
   width:100%;
   padding: 20px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: white;
   background: rgb(117, 13, 13);
   border:none;
@@ -43,8 +45,8 @@ button {
 }
 
 button:hover {
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background: rgb(112, 11, 11);
   box-shadow: inset 0 0 15px #00000046;
   text-shadow: 0px 0px 10px rgb(73, 11, 11);
@@ -57,18 +59,20 @@ p {
   width: 100%;
 }
 
-nav {
-  border-top: 5px solid rgb(34, 12, 12);
-}
 
 
-#about {
+.about {
   background: rgb(117, 13, 13);
   background-size: cover;
   background-attachment: fixed;
   color: snow;
-  border-top: 5px solid rgb(34, 12, 12);
-  /* padding: 20px; */
+}
+
+.technologies {
+  background: rgb(245, 245, 245);
+  background-size: cover;
+  background-attachment: fixed;
+  color: rgb(83, 15, 15);
 }
 
 #projects {
@@ -83,8 +87,21 @@ nav {
 .pb-20 {
   padding-bottom: 20px;
 }
+
+.p-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
 .navigation-buttons {
   background:rgb(34, 12, 12);
+  margin: 0;
+  border-top: 3px solid rgb(34, 12, 12);
+  border-bottom: 3px solid rgb(34, 12, 12);
 }
 
 .justify-evenly {
@@ -100,15 +117,17 @@ nav {
 }
 
 .header {
-  background-image: url(photos/Graveyard\ OverlaybackgroundMore\ night.png);
+  /* background-image: url(photos/Graveyard\ OverlaybackgroundMore\ night.png);
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
-  /* padding-bottom: 20px; */
+  width:100%;
+  /* padding-left: 100px;
+  padding-right: 100px; */
 }
 
 .row {
@@ -138,33 +157,39 @@ nav {
 
 .test-grad {
   background: linear-gradient(rgba(0, 0, 0, 0), black);
-  /* padding-bottom: 50px;
-  padding-top: 50px; */
 }
 
 .tech-img {
   width: auto;
   height: 200px;
-  padding-bottom: 50px;
   margin: 0;
 }
 
 .project-img {
   width: 100%;
   margin: 0;
-  background: linear-gradient(rgba(56, 12, 12, 0),rgb(73, 22, 22));
+  background: linear-gradient(rgba(255, 255, 255, 0),white);
+
 }
 
 .project-container {
-  display: flex;
-  flex-wrap: wrap;
-  width: calc(100% / 5);
-
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.609), 0, 0);
+  box-sizing: border-box;
+  width: calc(100% / 3 );
+  max-width: 350px;
+  margin: 20px;
 }
 
 .project-text {
-  background-color: rgb(75, 18, 18);
+  background: rgb(255, 255, 255);
+  color:black;
   padding: 20px;
   width: 100%;
-  border-top: 5px solid white;
+}
+
+.col-8 {
+  width:90%;
+}
+
+.test {
 }
