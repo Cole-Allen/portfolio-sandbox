@@ -19,19 +19,20 @@ h4 {
   margin: 0px;
 }
 
-h1 {
+h1,
+h2 {
   margin: 0;
 }
 
 a {
-    width: calc(100% / 3.05);
+    width: calc(100% / 4);
     text-decoration: none;
 }
 
 button {
   font-family: 'Ubuntu', sans-serif;
   display: block;
-  font-size: 24pt;
+  font-size: 16pt;
   width:100%;
   padding: 20px;
   padding-top: 20px;
@@ -59,7 +60,9 @@ p {
   width: 100%;
 }
 
-
+.white-text {
+  color: snow;
+}
 
 .about {
   background: rgb(117, 13, 13);
@@ -80,6 +83,10 @@ p {
   color: snow;
 }
 
+.contact {
+  background: rgb(245, 245, 245);
+}
+
 .pb-50 {
   padding-bottom: 50px;
 }
@@ -95,6 +102,11 @@ p {
 
 .pt-50 {
   padding-top: 50px;
+}
+
+.plr-50 {
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .navigation-buttons {
@@ -173,11 +185,11 @@ p {
 }
 
 .project-container {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.609), 0, 0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.561);
   box-sizing: border-box;
   width: calc(100% / 3 );
   max-width: 350px;
-  margin: 20px;
+  margin: 10px;
 }
 
 .project-text {
@@ -185,10 +197,15 @@ p {
   color:black;
   padding: 20px;
   width: 100%;
+  margin:0;
+}
+
+.project-container:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.561);
 }
 
 .col-8 {
-  width:90%;
+  width:100%;
 }
 
 .test {
