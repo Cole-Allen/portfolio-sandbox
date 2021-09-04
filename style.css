@@ -35,10 +35,12 @@ p {
 }
 
 .container {
+  margin: 0 auto;
   flex-basis: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 90%;
 }
 
 .row {
@@ -49,7 +51,7 @@ p {
 .header {
   flex-direction: column;
   align-items: center;
-  margin: 20px 0;
+  margin: 40px 0;
   text-align: center;
   color: white;
 }
@@ -68,15 +70,6 @@ p {
   flex-basis: 100%;
   margin: 30px;
 
-}
-
-.header-text > h1 {
-  margin-bottom: 10px;
-}
-
-.header-text > h4 {
-  margin-bottom: 20px;
-  font-size: 2rem;
 }
 
 .navigation-buttons {
@@ -126,7 +119,7 @@ p {
 
   width: calc(100% / 5);
   transition: transform 0.5s ease;
-  min-width: 300px;
+  min-width: 200px;
 }
 
 .tech-img:hover {
@@ -153,7 +146,8 @@ p {
   padding: 30px;
   transition: transform 0.5s ease;
   border: 3px solid gray;
-  border-radius: 20px
+  border-radius: 20px;
+  margin: 20px;
 }
 
 .project-item-container:hover {
@@ -168,6 +162,10 @@ p {
 
 @media screen and (max-width: 1074px) {
 
+.container {
+  width: 100%;
+}
+
   .navigation-buttons {
     flex-wrap: wrap;
   }
@@ -176,4 +174,32 @@ p {
     flex-basis: 50%;
   }
 
+}
+
+@media screen and (max-width: 768px) {
+
+  h1 {
+  font-size: 3rem;
+}
+
+  .navigation-buttons {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .nav-anchor {
+    flex-basis: 100%;
+  }
+
+  .tech-img {
+  min-width: 100px;
+}
+
+.project-item-container {
+  flex-basis: 100%;
+}
+
+.project-item-container:hover {
+  transform: scale(1.05);
+}
 }
