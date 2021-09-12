@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  text-align: center;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(243, 243, 243);
+}
+
+img {
+  object-fit: cover;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 769px;
+}
+
+.row {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 769px) {
+  .container {
+    max-width: 100%;
+  }
+
+}
